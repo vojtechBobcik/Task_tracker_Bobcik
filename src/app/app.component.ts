@@ -9,13 +9,14 @@ import { DUMMY_USERS } from './dummy-users';
   selector: 'app-root',
   imports: [RouterOutlet, HeaderComponent, UserComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'first-angular-app';
 
   users = DUMMY_USERS;
 
-
-
+  onSelectUser(id: string) {
+    console.log('Selected user with id:' + id);
+  }
 }
