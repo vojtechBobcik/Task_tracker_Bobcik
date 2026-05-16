@@ -26,7 +26,11 @@ export class UserComponent {
   // })
 
   onSelectUser(){
-    this.select.emit(this.id);
+    var UserInfo = {
+      id: this.id,
+      name: this.name
+    }
+    this.select.emit(UserInfo);
   }
 
 
