@@ -17,15 +17,15 @@ export class AppComponent {
 
   users = DUMMY_USERS;
 
-  selectedUserId: string = '';
-  selectedUserName: string ='';
+  selectedUserId?: string;
+  selectedUserName?: string;
 
-  onSelectUser(userInfo: { id:string; name: string}) {
+  onSelectUser(userInfo: { id: string; name: string }) {
     this.selectedUserId = userInfo.id;
-    this.selectedUserName = userInfo.name
+    this.selectedUserName = userInfo.name;
 
     console.log(
-      `Selected user with id : ${this.selectedUserId} and name ${this.selectedUserName}`
-    )
+      `Selected user with id : ${this.selectedUserId} and name ${this.selectedUserName}`,
+    );
   }
 }
