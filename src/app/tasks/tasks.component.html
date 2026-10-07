@@ -1,1 +1,14 @@
-<p>selected user: {{selectedUserName}}</p>
+<section id="tasks">
+  <header>
+    <h2>{{ selectedUserName }}'s Tasks</h2>
+    <menu>
+      <button>Add Task</button>
+    </menu>
+  </header>
+
+  <ul>
+    @for (i of [1, 2, 3]; track $index) {
+      <li><app-task /></li>
+    }
+  </ul>
+</section>
