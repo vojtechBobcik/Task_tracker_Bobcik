@@ -7,7 +7,7 @@
   </header>
 
   <ul>
-    @for (i of [1, 2, 3]; track $index) {
+    @for (task of selectedUserTasks; track task.id) {
       <li><app-task /></li>
     }
   </ul>
