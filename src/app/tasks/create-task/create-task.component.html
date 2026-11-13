@@ -1,0 +1,16 @@
+<article>
+  <!-- <h2>{{ task.title }}</h2>
+  <time> {{ task.dueDate }} </time>
+  <p>{{ task.summary }}</p>
+  <p class="actions">
+    <button>Complete</button>
+  </p> -->
+  <form>
+    <label>Task name: <input type="text" id="taskName" ></label><hr>
+    <label>Due date: </label>
+    <input type="time" id="taskDueDate"><hr>
+    <label>Summary: </label>
+    <input type="text" id="taskSummary"><hr>
+    <button (click)="onCreateTaskButttonClicked()">Create</button>
+  </form>
+</article>
